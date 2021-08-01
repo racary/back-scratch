@@ -1,0 +1,33 @@
+{
+  "name": "back-scratch",
+  "version": "1.0.0",
+  "description": "RESTful API to interface with ScratchBlings database of back scratchers",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "run": "nodemon app.js",
+    "lint": "npx standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/racary/back-scratch.git"
+  },
+  "author": "rcary",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/racary/back-scratch/issues"
+  },
+  "homepage": "https://github.com/racary/back-scratch#readme",
+  "dependencies": {
+    "ajv": "^8.6.2",
+    "express": "^4.17.1",
+    "lodash": "^4.17.21",
+    "pg": "^8.7.1",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12",
+    "standard": "^16.0.3"
+  }
+}
