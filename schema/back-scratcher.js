@@ -14,4 +14,4 @@ const backScrachter = {
   required: ['description', 'name', 'size', 'price']
 }
 
-module.exports = { backScrachter };
+module.exports = { backScrachter }
