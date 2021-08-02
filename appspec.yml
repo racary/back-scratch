@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - destination: ./home/ec2-user
+  - destination: ./home/ec2-user/back-scratch
     source: ./
 hooks:
   Install:
@@ -10,5 +10,5 @@ hooks:
       runas: root
   ApplicationStart:
     - location: ./scripts/start_server.sh
-      timeout: 10000
+      timeout: 1000
       runas: root
