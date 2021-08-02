@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - destination: ./home/ec2-user/back-scratch
+  - destination: ./back-scratch
     source: ./
 hooks:
   Install:
