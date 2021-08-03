@@ -11,11 +11,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:3000/back-scratchers",
+					"raw": "{{url}}/back-scratchers",
 					"host": [
-						"localhost"
+						"{{url}}"
 					],
-					"port": "3000",
 					"path": [
 						"back-scratchers"
 					]
@@ -54,7 +53,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"name\": \"BackScratch Limited 2\",\n\t\"description\": \"Limited Edition\",\n\t\"size\": [\"XL\"],\n\t\"price\": 13.97\n}",
+					"raw": "{\n\t\"name\": \"BackScratch Limited 4\",\n\t\"description\": \"Limited Edition\",\n\t\"size\": [\"XXL\", \"M\"],\n\t\"price\": 323.97\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -79,13 +78,13 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{url}}/back-scratchers/9",
+					"raw": "{{url}}/back-scratchers/12",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
 						"back-scratchers",
-						"9"
+						"12"
 					]
 				}
 			},
@@ -120,6 +119,24 @@
 					"path": [
 						"back-scratchers",
 						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Back Scratcher by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/back-scratchers/100",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"back-scratchers",
+						"100"
 					]
 				}
 			},

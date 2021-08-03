@@ -6,7 +6,8 @@ const backScrachter = {
     size: {
       type: 'array',
       items: {
-        type: 'string'
+        type: 'string',
+        enum: ['XS', 'S', 'M', 'L', 'XL', 'XXL', 'XXXL']
       }
     },
     price: { type: 'number' }

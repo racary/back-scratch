@@ -40,6 +40,19 @@ router.get('/back-scratchers', async (req, res, next) => {
   }
 })
 
+router.get('/back-scratchers/:id', async (req, res, next) => {
+  const { id } = req.params
+  try {
+    const backScratcher = await Controller.getBackScratcherById(id)
+    if (backScratcher) {
+      res.send(backScratcher)
+    }
+    res.status(404).send({message: `backscratcher with id ${id} does not exist.`})
+  } catch (err) {
+    next(err)
+  }
+})
+
 router.put('/back-scratchers/:id', async (req, res, next) => {
   const { id } = req.params
   const { body } = req
